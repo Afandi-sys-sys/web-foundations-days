@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple note-taking tool with character counting and dark mode." />
+    <title>QuickNotes | Day 4</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>QuickNotes</h1>
+      <p>Capture ideas before they disappear.</p>
+    </header>
+
+
+<main>
+  <section class="note-card">
+    <div class="section-heading">
+      <div>
+        <h2>Write your note</h2>
+        <p class="description">Your draft is saved automatically.</p>
+      </div>
+
+      <button id="theme-toggle" type="button">Dark mode</button>
+    </div>
+
+    <label for="note-text">Your note</label>
+
+    <textarea
+      id="note-text"
+      rows="10"
+      placeholder="Start typing your note here..."
+    ></textarea>
+
+    <div class="counter-container" aria-live="polite">
+      <p id="char-count">0 / 200 characters</p>
+      <p id="word-count">0 words</p>
+    </div>
+
+    <div class="actions">
+      <button id="clear-btn" type="button" class="clear-button">
+        Clear note
+      </button>
+    </div>
+
+    <p class="help-text">
+      Your draft stays in this browser until you clear it.
+      Press Escape inside the text area to clear your note.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 QuickNotes. Built during Web Foundations.</p>
+</footer>
+
+  </body>
+</html>
