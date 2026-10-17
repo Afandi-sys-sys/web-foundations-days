@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page that fetches, displays, and filters users from an API.">
+    <title>Day 5 - Users API Lab</title>
+    <script src="users.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Users API Lab</h1>
+        <p>Load users from an API and filter them by name.</p>
+    </header>
+<main>
+    <section aria-labelledby="users-heading">
+        <h2 id="users-heading">Users</h2>
+
+        <button id="load-users" type="button">Load Users</button>
+
+        <div>
+            <label for="filter-input">Filter users by name:</label>
+            <input
+                type="text"
+                id="filter-input"
+                placeholder="Enter a name..."
+            >
+        </div>
+
+        <p id="status" role="status" aria-live="polite"></p>
+
+        <ul id="users-list"></ul>
+    </section>
+</main>
+
+</body>
+</html>
